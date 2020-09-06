@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/firstNameViewModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="First Name:"
+        android:textSize="17sp"
+        android:textColor= "@android:color/black"/>
+
+    <EditText
+        android:id="@+id/firstNameEditModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/firstNameViewModify"
+        android:layout_alignBottom="@+id/firstNameViewModify"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name" />
+
+    <TextView
+        android:id="@+id/lastNameViewModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name: "
+        android:layout_below="@+id/firstNameViewModify"
+        android:layout_alignStart="@+id/firstNameViewModify"
+        android:textColor= "@android:color/black"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/lastNameEditModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:layout_below="@id/firstNameEditModify"
+        android:layout_alignStart="@id/firstNameEditModify"/>
+
+    <TextView
+        android:id="@+id/phoneNumberViewModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number: "
+        android:textColor= "@android:color/black"
+        android:layout_below="@id/lastNameViewModify"
+        android:layout_alignStart="@id/lastNameViewModify"
+        android:layout_toLeftOf="@id/phoneNumberEditModify"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/phoneNumberEditModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_below="@id/lastNameEditModify"
+        android:layout_alignStart="@+id/lastNameEditModify"
+        android:hint="###-###-#####"
+        />
+
+
+    <TextView
+        android:id="@+id/birthDateTextModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birth Date: "
+        android:layout_below="@+id/phoneNumberViewModify"
+        android:layout_alignStart="@+id/phoneNumberViewModify"
+        android:layout_marginTop="20dp"
+        android:textColor= "@android:color/black"
+        android:textSize="17sp"
+        />
+
+    <EditText
+        android:id="@+id/birthCalendarModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_below="@+id/phoneNumberEditModify"
+        android:layout_alignStart="@+id/phoneNumberEditModify"
+        android:layout_alignBottom="@+id/birthDateTextModify"
+        android:hint="MMDDYYYY"
+        android:focusableInTouchMode="false"
+        />
+
+    <TextView
+        android:id="@+id/dateContactedTextModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Contacted: "
+        android:layout_below="@+id/birthDateTextModify"
+        android:layout_alignStart="@+id/birthDateTextModify"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/firstMetModifyCalendar"
+        />
+
+    <EditText
+        android:id="@+id/firstMetModifyCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none"
+        android:layout_below="@+id/birthCalendarModify"
+        android:layout_alignStart="@+id/birthCalendarModify"
+        android:layout_alignBottom="@+id/dateContactedTextModify"
+        android:hint="MMDDYYYY"
+        android:focusableInTouchMode="false"
+        />
+
+    <EditText
+        android:id="@+id/Address1Modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/firstMetModifyCalendar"
+        android:layout_alignStart="@+id/firstMetModifyCalendar"
+        android:layout_alignBottom="@+id/Address1TextModify"
+        android:hint="1234 Somewhere Street"
+        />
+
+    <TextView
+        android:id="@+id/Address1TextModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address 1: "
+        android:layout_below="@+id/dateContactedTextModify"
+        android:layout_alignStart="@+id/dateContactedTextModify"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/Address1Modify"
+        />
+
+    <TextView
+        android:id="@+id/Address2TextModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address 2: "
+        android:layout_below="@+id/Address1TextModify"
+        android:layout_alignStart="@+id/Address1TextModify"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/Address1Modify"
+        />
+
+    <EditText
+        android:id="@+id/Address2Modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/Address1Modify"
+        android:layout_alignStart="@+id/Address1Modify"
+        android:layout_alignBottom="@+id/Address2TextModify"
+        android:hint="Apartment, Suite, etc."
+        />
+
+    <EditText
+        android:id="@+id/CityModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/Address2Modify"
+        android:layout_alignStart="@+id/Address2Modify"
+        android:layout_alignBottom="@+id/CityTextModify"
+        android:hint="City"
+        />
+
+    <TextView
+        android:id="@+id/CityTextModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City: "
+        android:layout_below="@+id/Address2TextModify"
+        android:layout_alignStart="@+id/Address2TextModify"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/CityModify"
+        />
+
+    <TextView
+        android:id="@+id/StateTextModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State: "
+        android:layout_below="@+id/CityTextModify"
+        android:layout_alignStart="@+id/CityTextModify"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/CityModify"
+        />
+
+
+    <EditText
+        android:id="@+id/StateModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/CityModify"
+        android:layout_alignStart="@+id/CityModify"
+        android:layout_alignBottom="@+id/StateTextModify"
+        android:hint="TX, VA, NY, etc."
+        />
+
+    <TextView
+        android:id="@+id/ZipcodeTextModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zipcode: "
+        android:layout_below="@+id/StateTextModify"
+        android:layout_alignStart="@+id/StateTextModify"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/StateModify"
+        />
+
+    <EditText
+        android:id="@+id/ZipcodeModify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/StateModify"
+        android:layout_alignStart="@+id/StateModify"
+        android:layout_alignBottom="@+id/ZipcodeTextModify"
+        android:hint="12345"
+        />
+
+
+    <Button
+        android:id="@+id/Modify"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modify"
+        android:layout_below="@+id/ZipcodeTextModify"
+        android:layout_alignStart="@+id/ZipcodeTextModify"
+        android:layout_marginTop="5dp"
+        />
+
+    <Button
+        android:id="@+id/Delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Delete"
+        android:layout_alignStart="@id/ZipcodeModify"
+        android:layout_below="@id/ZipcodeModify"
+        android:layout_marginTop="5dp"
+        />
+
+
+</RelativeLayout>

@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/firstNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="40dp"
+        android:layout_centerHorizontal="true"
+        android:text="First Name:"
+        android:textSize="17sp"
+        android:textColor= "@android:color/black"/>
+
+    <EditText
+        android:id="@+id/firstNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@+id/firstNameView"
+        android:layout_alignBottom="@+id/firstNameView"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First Name" />
+
+    <TextView
+        android:id="@+id/lastNameView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last Name: "
+        android:layout_below="@+id/firstNameView"
+        android:layout_alignStart="@+id/firstNameView"
+        android:textColor= "@android:color/black"
+        android:textSize="17sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/lastNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last Name"
+        android:layout_below="@id/firstNameEdit"
+        android:layout_alignStart="@id/firstNameEdit"/>
+
+    <TextView
+        android:id="@+id/phoneNumberView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Number: "
+        android:textColor= "@android:color/black"
+        android:layout_below="@id/lastNameView"
+        android:layout_alignStart="@id/lastNameView"
+        android:layout_toLeftOf="@id/phoneNumberEdit"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        />
+
+    <EditText
+        android:id="@+id/phoneNumberEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="phone"
+        android:layout_below="@id/lastNameEdit"
+        android:layout_alignStart="@+id/lastNameEdit"
+        android:hint="###-###-#####"
+        />
+
+
+    <TextView
+        android:id="@+id/birthDateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Birth Date: "
+        android:layout_below="@+id/phoneNumberView"
+        android:layout_alignStart="@+id/phoneNumberView"
+        android:layout_marginTop="20dp"
+        android:textColor= "@android:color/black"
+        android:textSize="17sp"
+        />
+
+    <EditText
+        android:id="@+id/birthCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="date"
+        android:layout_below="@+id/phoneNumberEdit"
+        android:layout_alignStart="@+id/phoneNumberEdit"
+        android:layout_alignBottom="@+id/birthDateText"
+        android:hint="MMDDYYYY"
+        android:focusableInTouchMode="false"
+        />
+
+    <TextView
+        android:id="@+id/dateContactedText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="First Contacted: "
+        android:layout_below="@+id/birthDateText"
+        android:layout_alignStart="@+id/birthDateText"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/firstMetCalendar"
+        />
+
+    <EditText
+        android:id="@+id/firstMetCalendar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="none"
+        android:layout_below="@+id/birthCalendar"
+        android:layout_alignStart="@+id/birthCalendar"
+        android:layout_alignBottom="@+id/dateContactedText"
+        android:hint="MMDDYYYY"
+        android:focusableInTouchMode="false"
+        />
+
+    <EditText
+        android:id="@+id/Address1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/firstMetCalendar"
+        android:layout_alignStart="@+id/firstMetCalendar"
+        android:layout_alignBottom="@+id/Address1Text"
+        android:hint="1234 Somewhere Street"
+        />
+
+    <TextView
+        android:id="@+id/Address1Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address 1: "
+        android:layout_below="@+id/dateContactedText"
+        android:layout_alignStart="@+id/dateContactedText"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/Address1"
+        />
+
+    <TextView
+        android:id="@+id/Address2Text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Address 2: "
+        android:layout_below="@+id/Address1Text"
+        android:layout_alignStart="@+id/Address1Text"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/Address1"
+        />
+
+    <EditText
+        android:id="@+id/Address2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/Address1"
+        android:layout_alignStart="@+id/Address1"
+        android:layout_alignBottom="@+id/Address2Text"
+        android:hint="Apartment, Suite, etc."
+        />
+
+    <EditText
+        android:id="@+id/City"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/Address2"
+        android:layout_alignStart="@+id/Address2"
+        android:layout_alignBottom="@+id/CityText"
+        android:hint="City"
+        />
+
+    <TextView
+        android:id="@+id/CityText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City: "
+        android:layout_below="@+id/Address2Text"
+        android:layout_alignStart="@+id/Address2Text"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/City"
+        />
+
+    <TextView
+        android:id="@+id/StateText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="State: "
+        android:layout_below="@+id/CityText"
+        android:layout_alignStart="@+id/CityText"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/City"
+        />
+
+
+    <EditText
+        android:id="@+id/State"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/City"
+        android:layout_alignStart="@+id/City"
+        android:layout_alignBottom="@+id/StateText"
+        android:hint="TX, VA, NY, etc."
+        />
+
+    <TextView
+        android:id="@+id/ZipcodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zipcode: "
+        android:layout_below="@+id/StateText"
+        android:layout_alignStart="@+id/StateText"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginTop="20dp"
+        android:layout_toLeftOf="@+id/State"
+        />
+
+    <EditText
+        android:id="@+id/Zipcode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@+id/State"
+        android:layout_alignStart="@+id/State"
+        android:layout_alignBottom="@+id/ZipcodeText"
+        android:hint="12345"
+        />
+
+    <Button
+        android:id="@+id/Save"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/ZipcodeText"
+        android:layout_alignStart="@+id/ZipcodeText"
+        android:layout_marginTop="5dp"
+        />
+
+
+
+</RelativeLayout>

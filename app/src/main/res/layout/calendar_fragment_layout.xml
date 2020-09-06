@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/holder"
+        android:layout_marginTop="30dp"
+        />
+
+    <TextView
+        android:id="@+id/holder"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="."
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"/>
+
+    <TextView
+        android:id="@+id/dateChosenText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date Chosen: "
+        android:layout_below="@+id/calendarView"
+        android:layout_alignLeft="@+id/calendarView"
+        android:textSize="17sp"
+        android:textColor="@android:color/black"
+        android:layout_marginRight="10dp"
+        />
+
+    <TextView
+        android:id="@+id/date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="hi there"
+        android:visibility="invisible"
+        android:textColor="@android:color/black"
+        android:textSize="17sp"
+        android:layout_toRightOf="@+id/dateChosenText"
+        android:layout_below="@+id/calendarView"/>
+
+    <Button
+        android:id="@+id/saveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:layout_below="@+id/dateChosenText"
+        android:layout_alignLeft="@+id/dateChosenText"
+        android:layout_marginTop="35dp"/>
+
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:layout_toEndOf="@+id/saveButton"
+        android:layout_below="@+id/dateChosenText"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"/>
+
+
+</RelativeLayout>

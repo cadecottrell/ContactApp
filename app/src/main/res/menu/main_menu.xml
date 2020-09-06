@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:title="Add Contact"
+        android:id="@+id/addContact"
+        android:icon="@drawable/contact_add"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Import Contacts"
+        android:id="@+id/importContacts"
+        android:icon="@drawable/import_contacts"
+        app:showAsAction="always"
+        />
+    <item
+        android:title="Clear Contacts"
+        android:id="@+id/clearContacts"
+        android:icon="@drawable/clear"
+        app:showAsAction="always"
+        />
+
+
+</menu>
